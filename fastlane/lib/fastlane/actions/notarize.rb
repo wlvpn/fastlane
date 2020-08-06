@@ -118,7 +118,7 @@ module Fastlane
 
       def self.staple(package_path, verbose)
         Actions.sh(
-          "xcrun stapler staple \"#{package_path}\"",
+          "xcrun stapler staple -v \"#{package_path}\"",
           log: verbose
         )
       end
